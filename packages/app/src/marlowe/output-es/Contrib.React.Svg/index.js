@@ -1,0 +1,11 @@
+import * as React$dBasic from "../React.Basic/index.js";
+import * as React$dBasic$dDOM$dGenerated from "../React.Basic.DOM.Generated/index.js";
+import {_LoadingSpinnerLogo, _SvgProgress} from "./foreign.js";
+const img = /* #__PURE__ */ React$dBasic.element(React$dBasic$dDOM$dGenerated._img$p);
+const SvgUrl = x => x;
+const newtypeSvgUrl_ = {Coercible0: () => {}};
+const svgProgress = /* #__PURE__ */ React$dBasic.element(_SvgProgress);
+const svgImg = () => () => () => props => img(props);
+const loadingSpinnerLogo = /* #__PURE__ */ React$dBasic.element(_LoadingSpinnerLogo);
+export {SvgUrl, img, loadingSpinnerLogo, newtypeSvgUrl_, svgImg, svgProgress};
+export * from "./foreign.js";

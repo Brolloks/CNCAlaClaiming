@@ -1,0 +1,11 @@
+import * as Type$dProxy from "../Type.Proxy/index.js";
+const $NodeBody = (tag, _1) => ({tag, _1});
+const UseWritable = x => x;
+const NodeBuffer = value0 => $NodeBody("NodeBuffer", value0);
+const NodeStream = value0 => $NodeBody("NodeStream", value0);
+const NodeWriter = value0 => $NodeBody("NodeWriter", value0);
+const ClientResponse = x => x;
+const nodeWriter = f => $NodeBody("NodeWriter", f);
+const newtypeClientResponse = {Coercible0: () => {}};
+const _string = Type$dProxy.Proxy;
+export {$NodeBody, ClientResponse, NodeBuffer, NodeStream, NodeWriter, UseWritable, _string, newtypeClientResponse, nodeWriter};

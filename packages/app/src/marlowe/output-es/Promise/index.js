@@ -1,0 +1,13 @@
+import * as Effect$dUncurried from "../Effect.Uncurried/index.js";
+import * as Promise$dInternal from "../Promise.Internal/index.js";
+const then_ = () => k => p => () => Promise$dInternal.then_($0 => k($0)(), p);
+const thenOrCatch = () => k => c => p => () => Promise$dInternal.thenOrCatch($0 => k($0)(), $0 => c($0)(), p);
+const resolve = () => Promise$dInternal.resolve;
+const race = /* #__PURE__ */ Effect$dUncurried.runEffectFn1(Promise$dInternal.race);
+const $$new = () => k => () => Promise$dInternal.new((onResolve, onReject) => k(Effect$dUncurried.runEffectFn1(onResolve))(Effect$dUncurried.runEffectFn1(onReject))());
+const flattenPromise = () => ({});
+const flattenDone = {};
+const $$finally = /* #__PURE__ */ Effect$dUncurried.runEffectFn2(Promise$dInternal.finally);
+const $$catch = k => p => () => Promise$dInternal.catch($0 => k($0)(), p);
+const all = /* #__PURE__ */ Effect$dUncurried.runEffectFn1(Promise$dInternal.all);
+export {all, $$catch as catch, $$finally as finally, flattenDone, flattenPromise, $$new as new, race, resolve, thenOrCatch, then_};

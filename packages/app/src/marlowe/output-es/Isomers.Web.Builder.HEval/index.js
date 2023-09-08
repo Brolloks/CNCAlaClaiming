@@ -1,0 +1,13 @@
+import * as Type$dProxy from "../Type.Proxy/index.js";
+const $DoIsHJust = () => ({tag: "DoIsHJust"});
+const $DoNull = () => ({tag: "DoNull"});
+const $FromHJust = () => ({tag: "FromHJust"});
+const FromHJust = /* #__PURE__ */ $FromHJust();
+const DoNull = /* #__PURE__ */ $DoNull();
+const DoIsHJust = /* #__PURE__ */ $DoIsHJust();
+const mappingFromHJust = {mapping: v => v1 => v1._1};
+const isHJustNothing = {};
+const isHJust = {};
+const hevalDoNull = () => () => ({heval: v => v1 => Type$dProxy.Proxy});
+const hevalDoIsHJust = () => ({heval: v => v1 => Type$dProxy.Proxy});
+export {$DoIsHJust, $DoNull, $FromHJust, DoIsHJust, DoNull, FromHJust, hevalDoIsHJust, hevalDoNull, isHJust, isHJustNothing, mappingFromHJust};

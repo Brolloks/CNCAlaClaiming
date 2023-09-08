@@ -1,0 +1,11 @@
+import * as React$dBasic from "../React.Basic/index.js";
+import * as Unsafe$dCoerce from "../Unsafe.Coerce/index.js";
+import {_Table} from "./foreign.js";
+const variant = {dark: "dark", light: "light"};
+const striped = {boolean: Unsafe$dCoerce.unsafeCoerce, columns: "columns"};
+const sm = "sm";
+const responsive = {xs: "xs", sm: "sm", md: "md", lg: "lg", xl: "xl", boolean: Unsafe$dCoerce.unsafeCoerce};
+const _internaltable = () => _Table;
+const table = () => dictToJSX => () => () => props => children => React$dBasic.element(_Table)({...props, children: dictToJSX.toJSX(children)});
+export {_internaltable, responsive, sm, striped, table, variant};
+export * from "./foreign.js";

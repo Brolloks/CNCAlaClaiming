@@ -1,0 +1,11 @@
+import * as Routing$dDuplex from "../Routing.Duplex/index.js";
+import * as Routing$dDuplex$dGeneric from "../Routing.Duplex.Generic/index.js";
+const gsepStringString = {gsep: a => b => Routing$dDuplex.prefix(a)(Routing$dDuplex.prefix(b)(Routing$dDuplex.applicativeRouteDuplex.pure()))};
+const gsepStringRoute = dictGRouteDuplexCtr => ({gsep: a => x => Routing$dDuplex.prefix(a)(dictGRouteDuplexCtr.gRouteDuplexCtr(x))});
+const gsepRouteString = dictGRouteDuplexCtr => ({gsep: x => Routing$dDuplex.suffix(dictGRouteDuplexCtr.gRouteDuplexCtr(x))});
+const gsepProduct = dictGRouteDuplexCtr => ({gsep: Routing$dDuplex$dGeneric.product(dictGRouteDuplexCtr)});
+const gsep = dict => dict.gsep;
+const gparamsString = dictRouteDuplexParams => ({gparams: a => x => Routing$dDuplex.prefix(a)(dictRouteDuplexParams.params(x))});
+const gparamsRoute = dictRouteDuplexParams => ({gparams: a => x => Routing$dDuplex$dGeneric.product(Routing$dDuplex$dGeneric.gRouteAll)(a)(dictRouteDuplexParams.params(x))});
+const gparams = dict => dict.gparams;
+export {gparams, gparamsRoute, gparamsString, gsep, gsepProduct, gsepRouteString, gsepStringRoute, gsepStringString};

@@ -1,0 +1,18 @@
+import * as React$dBasic from "../React.Basic/index.js";
+import * as Unsafe$dCoerce from "../Unsafe.Coerce/index.js";
+import {_Brand, _Collapse, _Navbar, _Toggle} from "./foreign.js";
+const variant = {light: "light", dark: "dark"};
+const stickyTop = "top";
+const fixed = {top: "top", bottom: "bottom"};
+const expand = {boolean: Unsafe$dCoerce.unsafeCoerce, sm: "sm", md: "md", lg: "lg", xl: "xl", xxl: "xxl"};
+const dimension = {height: "height", width: "width"};
+const _internaltoggle = () => _Toggle;
+const toggle = () => props => React$dBasic.element(_Toggle)(props);
+const _internalnavbar = () => _Navbar;
+const navbar = () => dictToJSX => () => () => props => children => React$dBasic.element(_Navbar)({...props, children: dictToJSX.toJSX(children)});
+const _internalcollapse = () => _Collapse;
+const collapse = () => dictToJSX => () => () => props => children => React$dBasic.element(_Collapse)({...props, children: dictToJSX.toJSX(children)});
+const _internalbrand = () => _Brand;
+const brand = () => dictToJSX => () => () => props => children => React$dBasic.element(_Brand)({...props, children: dictToJSX.toJSX(children)});
+export {_internalbrand, _internalcollapse, _internalnavbar, _internaltoggle, brand, collapse, dimension, expand, fixed, navbar, stickyTop, toggle, variant};
+export * from "./foreign.js";

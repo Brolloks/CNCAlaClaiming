@@ -1,0 +1,16 @@
+import * as Data$dNullable from "../Data.Nullable/index.js";
+import * as React$dBasic from "../React.Basic/index.js";
+import * as Unsafe$dCoerce from "../Unsafe.Coerce/index.js";
+import {_Carousel, _CarouselCaption, _CarouselItem} from "./foreign.js";
+const eqDirection = {eq: d1 => d2 => d1 === d2};
+const start = "start";
+const interval = {null: Data$dNullable.null, number: Unsafe$dCoerce.unsafeCoerce};
+const end = "end";
+const carouselVariant = {dark: "dark", string: Unsafe$dCoerce.unsafeCoerce};
+const caption = dictToJSX => () => () => () => props => children => React$dBasic.element(_CarouselCaption)({...props, children: dictToJSX.toJSX(children)});
+const _internalitem = () => props => React$dBasic.element(_CarouselItem)(props);
+const item = dictToJSX => () => () => () => props => children => React$dBasic.element(_CarouselItem)({...props, children: dictToJSX.toJSX(children)});
+const _internalcarousel = () => props => React$dBasic.element(_Carousel)(props);
+const carousel = dictToJSX => () => () => () => props => children => React$dBasic.element(_Carousel)({...props, children: dictToJSX.toJSX(children)});
+export {_internalcarousel, _internalitem, caption, carousel, carouselVariant, end, eqDirection, interval, item, start};
+export * from "./foreign.js";

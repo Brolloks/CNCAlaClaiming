@@ -1,0 +1,12 @@
+import * as React$dBasic from "../React.Basic/index.js";
+import * as Unsafe$dCoerce from "../Unsafe.Coerce/index.js";
+import {_Control} from "./foreign.js";
+const value = {string: Unsafe$dCoerce.unsafeCoerce, number: Unsafe$dCoerce.unsafeCoerce, array: Unsafe$dCoerce.unsafeCoerce};
+const _internalcontrol = () => _Control;
+const control = () => props => React$dBasic.element(_Control)(props);
+const textInput = () => () => () => props => React$dBasic.element(_Control)({type: "text", as: "input", ...props});
+const _internalTextArea = () => _Control;
+const textArea = () => () => props => React$dBasic.element(_Control)({...props, as: "textarea"});
+const _internalSelect = () => _Control;
+export {_internalSelect, _internalTextArea, _internalcontrol, control, textArea, textInput, value};
+export * from "./foreign.js";

@@ -1,0 +1,14 @@
+import * as Isomers$dContrib$dHeterogeneous$dHEval from "../Isomers.Contrib.Heterogeneous.HEval/index.js";
+import * as Isomers$dContrib$dHeterogeneous$dMappings$dNewtype from "../Isomers.Contrib.Heterogeneous.Mappings.Newtype/index.js";
+import * as Isomers$dRequest$dAccum$dType from "../Isomers.Request.Accum.Type/index.js";
+import * as Type$dProxy from "../Type.Proxy/index.js";
+const WebSpec = x => x;
+const AccumWebSpec = x => x;
+const rootAccumWebSpec = v => ({spec: {request: Isomers$dRequest$dAccum$dType.rootDuplex(v.spec.request), response: v.spec.response}, render: v.render});
+const newtypeWeb = {Coercible0: () => {}};
+const newtypeAccumWebSpec = {Coercible0: () => {}};
+const _spec = Type$dProxy.Proxy;
+const _render = Type$dProxy.Proxy;
+const _GetSpec = /* #__PURE__ */ Isomers$dContrib$dHeterogeneous$dHEval.$HCompose(Type$dProxy.Proxy, Isomers$dContrib$dHeterogeneous$dMappings$dNewtype.Unwrap);
+const _GetRender = /* #__PURE__ */ Isomers$dContrib$dHeterogeneous$dHEval.$HCompose(Type$dProxy.Proxy, Isomers$dContrib$dHeterogeneous$dMappings$dNewtype.Unwrap);
+export {AccumWebSpec, WebSpec, _GetRender, _GetSpec, _render, _spec, newtypeAccumWebSpec, newtypeWeb, rootAccumWebSpec};

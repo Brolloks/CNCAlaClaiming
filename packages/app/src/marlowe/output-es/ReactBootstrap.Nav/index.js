@@ -1,0 +1,10 @@
+import * as React$dBasic from "../React.Basic/index.js";
+import * as Unsafe$dCoerce from "../Unsafe.Coerce/index.js";
+import {_Link, _Nav} from "./foreign.js";
+const variant = {tabs: "tabs", pills: "pills", string: Unsafe$dCoerce.unsafeCoerce};
+const _internalnav = () => _Nav;
+const nav = () => dictToJSX => () => () => props => children => React$dBasic.element(_Nav)({...props, children: dictToJSX.toJSX(children)});
+const _internallink = () => _Link;
+const link = () => dictToJSX => () => () => props => children => React$dBasic.element(_Link)({...props, children: dictToJSX.toJSX(children)});
+export {_internallink, _internalnav, link, nav, variant};
+export * from "./foreign.js";

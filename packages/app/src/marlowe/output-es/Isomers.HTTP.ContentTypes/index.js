@@ -1,0 +1,14 @@
+import * as Type$dProxy from "../Type.Proxy/index.js";
+const _text = Type$dProxy.Proxy;
+const text = value => ({type: "text/plain", value});
+const _svg = Type$dProxy.Proxy;
+const svg = value => ({type: "image/svg+xml", value});
+const _png = Type$dProxy.Proxy;
+const png = value => ({type: "image/png", value});
+const _json = Type$dProxy.Proxy;
+const json = value => ({type: "application/json", value});
+const _jpeg = Type$dProxy.Proxy;
+const jpeg = value => ({type: "image/jpeg", value});
+const _javascript = Type$dProxy.Proxy;
+const _html = Type$dProxy.Proxy;
+export {_html, _javascript, _jpeg, _json, _png, _svg, _text, jpeg, json, png, svg, text};

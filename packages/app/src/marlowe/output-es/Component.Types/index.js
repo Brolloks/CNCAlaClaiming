@@ -1,0 +1,10 @@
+const $MessageContent = (tag, _1) => ({tag, _1});
+const WalletInfo = x => x;
+const Slotting = x => x;
+const Info = value0 => $MessageContent("Info", value0);
+const Success = value0 => $MessageContent("Success", value0);
+const Warning = value0 => $MessageContent("Warning", value0);
+const $$Error = value0 => $MessageContent("Error", value0);
+const MessageHub = x => x;
+const newtypeWalletInfo_ = {Coercible0: () => {}};
+export {$MessageContent, $$Error as Error, Info, MessageHub, Slotting, Success, WalletInfo, Warning, newtypeWalletInfo_};

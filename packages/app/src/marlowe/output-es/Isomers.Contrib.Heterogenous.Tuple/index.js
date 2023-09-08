@@ -1,0 +1,14 @@
+import * as Data$dTuple from "../Data.Tuple/index.js";
+const $Fst = () => ({tag: "Fst"});
+const $Snd = () => ({tag: "Snd"});
+const Snoc = x => x;
+const Snd = /* #__PURE__ */ $Snd();
+const Fst = /* #__PURE__ */ $Fst();
+const Cons = x => x;
+const mappingSnd = {mapping: v => v1 => v1._2};
+const mappingFst = {mapping: v => v1 => v1._1};
+const mappinSnoc = {mapping: v => a => Data$dTuple.$Tuple(a, v)};
+const mappinCons = {mapping: v => b => Data$dTuple.$Tuple(v, b)};
+const foldingSnd = {folding: v => v1 => v2 => v2._2};
+const foldingFst = {folding: v => v1 => v2 => v2._1};
+export {$Fst, $Snd, Cons, Fst, Snd, Snoc, foldingFst, foldingSnd, mappinCons, mappinSnoc, mappingFst, mappingSnd};

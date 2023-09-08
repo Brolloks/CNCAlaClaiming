@@ -1,0 +1,14 @@
+import * as Data$dTuple from "../Data.Tuple/index.js";
+import * as Record$dUnsafe from "../Record.Unsafe/index.js";
+import * as Type$dProxy from "../Type.Proxy/index.js";
+const $Insert = (_1, _2) => ({tag: "Insert", _1, _2});
+const Insert = value0 => value1 => $Insert(value0, value1);
+const Get = x => x;
+const Delete = x => x;
+const newtypeDelete = {Coercible0: () => {}};
+const mappingInsert = dictIsSymbol => () => () => ({mapping: v => r => Record$dUnsafe.unsafeSet(dictIsSymbol.reflectSymbol(v._1))(v._2)(r)});
+const mappingGet = dictIsSymbol => () => ({mapping: v => r => Record$dUnsafe.unsafeGet(dictIsSymbol.reflectSymbol(v))(r)});
+const mappingDelete = dictIsSymbol => () => () => ({mapping: v => r => Record$dUnsafe.unsafeDelete(dictIsSymbol.reflectSymbol(v))(r)});
+const foldingGetUnit = dictIsSymbol => () => ({folding: v => v1 => r => Record$dUnsafe.unsafeGet(dictIsSymbol.reflectSymbol(Type$dProxy.Proxy))(r)});
+const foldingFst = dictIsSymbol => () => ({folding: v => acc => r => Data$dTuple.$Tuple(Record$dUnsafe.unsafeGet(dictIsSymbol.reflectSymbol(Type$dProxy.Proxy))(r), acc)});
+export {$Insert, Delete, Get, Insert, foldingFst, foldingGetUnit, mappingDelete, mappingGet, mappingInsert, newtypeDelete};

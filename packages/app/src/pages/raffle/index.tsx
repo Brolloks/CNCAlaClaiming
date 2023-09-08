@@ -41,9 +41,8 @@ export default function Raffle() {
 			wallet: wallet.wallet,
 			txOutRef: {
 				txId: // "8f7d1dd9f64b5b02733261ebfff49837ff7bf1f06daf9a383576e8144e6e22b9",
-          // "c5d5e46a159c3caf563929ad7b5915f554cce0883e7790c4a11b20c808581cff",
-          // "ed85da2d36e89c5a5021a89772fd6d59b6f36d2fc8bf8388ff8e9cce50290118",
-          "cfb9724979802431bd8c98386ce6343050898d27a0c96d61d245d9ceb87c5152",
+          // "748d2831fe08d500442736da8ef1a5d5c724794b76d8d2f02209e05cacb8ba03",
+          "bdfaf2c4d4fd500adef5349890f9737569877b62f8e2781855d84798413abbf4",
         // "c93175feff92ddfb571f4d12b9d34ab910594dce54ad4017a5670a0b43a930f5",
 				// txId: "3605db0c5ae9be7623cd4ecb04f8e99d784da35258f2952896b25f7613968b54",
 				txIx: 2,
